@@ -1,7 +1,7 @@
 // This shows a simple example of how to archive the build output artifacts.
 node {
-        stage('Checkout'){
-                checkout SCM
+        stage('Checkout SCM'){
+                git branch: 'SP2', url: 'https://github.com/karthikmuthyala/angular-ssr-starter.git'
         }
 
         stage('Install node modules'){
