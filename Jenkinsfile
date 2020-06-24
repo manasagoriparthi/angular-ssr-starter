@@ -11,8 +11,8 @@ pipeline {
         docker { image 'node:10'}
       }
       steps {
-        echo installing packages
-        npm install
+        sh 'echo installing packages'
+        sh 'npm install'
 
       }
     }
