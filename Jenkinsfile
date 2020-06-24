@@ -4,7 +4,7 @@ pipeline {
     stage ('checkout') {
       steps{
         checkout scm
-        sh 'apt-get update && apt-get install -y docker.io '
+        sh 'sudo apt-get update && apt-get install -y docker.io '
       }
     }
     stage ('Build') {
