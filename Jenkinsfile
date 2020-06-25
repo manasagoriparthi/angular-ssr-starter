@@ -25,7 +25,7 @@ pipeline {
         sh 'aws s3 ls'
         //sh 'aws s3 sync . s3://sample-angular-demo/ --region us-east-2'
         }
-        sh 'pushing success'
+        sh 'echo pushing success'
       }
     }
 
