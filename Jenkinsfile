@@ -21,7 +21,7 @@ pipeline {
     }
     stage ('push') {
       steps{
-   withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'angular', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']]) {
+   withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'angular', secretKeyVariable: 'AWS_SECRET_ACCESS_KEY']])  {
         //sh 'aws s3 ls'
         sh 'echo $PWD'
         sh 'ls'
